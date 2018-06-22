@@ -1,0 +1,100 @@
+@import "vars"
+
+.section-login
+	padding: 90px 0
+	.form-left-wrap, .form-right-wrap
+		color: #fefefe
+		text-align: right
+		border-right: 1px solid #3d4051
+		padding-right: 60px
+		.form-title
+			h2
+				font-size: 30px
+				margin-bottom: 13px
+
+	.form-right-wrap
+		border-right: none
+		padding: 0
+		float: left
+		padding-left: 30px
+		.remeberMe-pass_reset
+			.password-reset
+				float: left
+				display: inline-block
+				color: #fefefe
+				transition: none
+				&:hover
+					color: $accent
+					border-bottom: 1px solid $accent
+
+lable
+	margin-bottom: 13px
+	display: block
+	span
+		margin-bottom: 2px
+		display: inline-block
+		&:before
+			content: '*'
+			color: $accent
+			margin-left: 3px
+	input
+		display: block
+		width: 320px
+		border: 1px solid #7b7e8a
+		background-color: transparent
+		padding: 8px
+		color: #fefefe
+		outline: none
+		&:hover, &:focus
+			border-color: $accent
+
+.termsOfUse, .rememberMe
+	margin-bottom: 50px
+	.checkbox
+		display: none
+	.checkbox-custom
+		position: relative
+		width: 20px
+		height: 20px
+		border: 1px solid #7b7e8a
+	.checkbox-custom, label
+		display: inline-block
+		vertical-align: middle
+	.checkbox:checked + .checkbox-custom::before
+		content: ''
+		display: block
+		position: absolute
+		top: 2px
+		right: 2px
+		bottom: 2px
+		left: 2px
+		background: $accent
+	.label
+		margin-right: 10px
+		display: inline-block
+		a
+			color: $accent
+
+.btn-form
+	display: block
+	width: 320px
+	background-color: transparent
+	border: 1px solid $accent
+	color: $accent
+	cursor: pointer
+	padding: 8px 0
+	position: relative
+	text-align: center
+	&:hover
+		background-color: $accent
+		color: #fefefe
+		&:before
+			color: #fefefe
+	&:before
+		content: '\f104'
+		font-family: FontAwesome
+		position: absolute
+		left: 95px
+		color: $accent
+	&:active
+		outline: none

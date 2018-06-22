@@ -1,0 +1,275 @@
+.about-container{
+    width: 1550px;
+    margin: auto;
+}
+
+body{
+    text-align: right !important;
+    direction: rtl;
+}
+
+
+#banner_main{
+    background: url('/img/banner_main.jpg');
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-page-desc{
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    max-width: 925px;
+    margin: 10px  auto;
+}
+
+.about-page-title{
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+#about_pic{
+    background: url('/img/about_pic.jpg');
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about_pic-content{
+    max-width: 620px;
+}
+
+.about-pic-title{
+    font-size: 40px;
+    color: #212121;
+    font-weight: 300;
+}
+
+.about-pic-href{
+    color: #00a2fd;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.about-pic-desc{
+    color: #666a6f;
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+#parallax{
+    background: url('/img/parallax.jpg');
+    background-attachment: fixed;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-title{
+    color: #eaebeb;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.parallax-images{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.image-item:not(:last-child){
+    border-right: 1px solid rgba(140, 141, 141, 0.7);
+}
+
+.image-item span{
+    color: #e4e6e7;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+#people{
+    background: url('/img/people.jpg');
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#works{
+    background: white;
+    padding: 80px 0;
+}
+
+.works-title{
+    font-size: 40px;
+    text-align: center;
+    color: #00a2fd;
+    font-weight: 300;
+}
+
+.works-desc{
+    color: #212121;
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.works-items{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.works-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+#topline.background,
+#mobile-hamburger.background{
+    background: #090d19;
+}
+
+.works-item a{
+    margin-top: 35px;
+    color: #00a2fd;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.works-item img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.works-item-desc{
+    font-size: 14px;
+    color: #5c6065;
+}
+
+.breadcr{
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    width: 1550px;
+    color: white !important;
+}
+
+.breadcr a{
+    color: white; !important;
+}
+
+.breadcr a.acitve{
+    color: #00a2fd; !important;
+}
+
+.breadcr .res{
+    margin: 0 10px;
+}
+
+.works-item:not(:last-child){
+    border-right: 1px solid rgba(140, 141, 141, 0.4);
+}
+
+@media screen and (max-width: 1650px){
+    .about-container,
+    .breadcr{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .works-items,
+    .parallax-images{
+        flex-direction: column-reverse;
+    }
+
+    .mobile-logo{
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .mobile-logo img{
+        height: 35px;
+    }
+
+    .works-item,
+    .image-item{
+        margin: 15px 0;
+        border-right: none !important;
+    }
+
+    #parallax,
+    #about_pic,
+    #banner_main,
+    #people{
+        height: auto !important;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    #banner_main{
+        padding-top: 80px;
+    }
+
+
+
+    .about-pic-href{
+        font-size: 18px;
+    }
+
+    .about-pic-desc{
+        font-size: 17px;
+    }
+
+
+
+    .about-pic-title{
+        font-size: 35px;
+    }
+
+    .parallax-title{
+        font-size: 35px;
+    }
+
+    .works-title{
+        font-size: 35px;
+    }
+
+    .image-item img{
+        width: auto !important;
+        height: 47px !important;
+    }
+
+    .image-item{
+        flex: auto !important;
+    }
+}

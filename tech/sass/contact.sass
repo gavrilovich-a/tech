@@ -1,0 +1,182 @@
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+.section-contact
+	padding: 167px 0
+	.contact-form
+		overflow: hidden
+		form
+			text-align: right
+			display: inline-grid
+			float: right
+			padding: 50px
+			border: 4px solid #e0e2e5
+			p
+				display: inline-block
+				&.three-input
+					margin-bottom: 0
+				text-align: right
+				position: relative
+				label
+					margin: 0 0 13px 0
+					position: relative
+					display: block
+					&:before
+						content: ''
+						position: absolute
+						right: 0
+						top: 8px
+						width: 20px
+						height: 20px
+						display: block
+					&.input-name-wrap
+						&:before
+							background: url("../img/name.svg") no-repeat
+					&.input-tel-wrap
+						&:before
+							background: url("../img/case.svg") no-repeat
+					&.input-email-wrap
+						&:before
+							background: url("../img/phone-tube.svg") no-repeat
+				input
+					display: block
+					width: 340px
+					background-color: transparent
+					border: none
+					border-bottom: 1px solid #6c7082
+					padding: 8px 35px 8px 8px
+					color: #fff
+					outline: 0
+					text-align: right
+					&:hover, &:focus
+						border-color: $accent
+				&.textarea-wrap
+					margin-bottom: 13px
+					textarea
+						display: block
+						width: 340px
+						height: 110px
+						background-color: transparent
+						border: 1px solid #6c7082
+						color: #fff
+						resize: none
+						outline: 0
+						text-align: right
+						padding: 12px 8px
+						font-size: 16px
+						&:hover, &:focus
+							border-color: $accent
+				&.input-submit_wrap
+					margin-bottom: 0
+					label
+						margin-bottom: 0
+						&:before
+							content: '\f104'
+							font-family: 'FontAwesome'
+							color: #fff
+							position: absolute
+							top: 13px
+							left: 115px
+							line-height: 1
+						input
+							display: block
+							width: 340px
+							height: auto
+							border: 1px solid #6c7082
+							background: transparent
+							text-align: center
+							margin: 0
+							&:hover, &:focus
+								border-color: $accent
+								background-color: $accent
+						.ajax-loader
+							position: absolute
+							bottom: -10px
+							left: 160px
+	.contact-info-wrap
+		color: #fff
+		text-align: right
+		.contact-info-head
+			width: 80%
+			margin-bottom: 20px
+			h2
+				font-size: 50px
+				font-weight: normal
+				margin-bottom: 15px
+			p
+				font-size: 17px
+				line-height: 28px
+		.contact-info-item
+			margin-bottom: 30px
+			width: 80%
+			h3
+				display: inline-block
+				font-size: 28px
+				border-bottom: 1px solid #fff
+				margin-bottom: 15px
+			ul
+				li
+					display: inline-block
+					padding-right: 35px
+					position: relative
+					margin-bottom: 10px
+					&.mail-icon, &.chat-icon
+						a
+							color: #fff
+							&:hover
+								color: $accent
+					&.chat-icon
+						a
+							text-decoration: underline
+					&:before
+						content: ''
+						position: absolute
+						right: 0
+						top: 1px
+						width: 20px
+						height: 20px
+						display: block
+					&.map-icon
+						&:before
+							background: url("../img/map.svg") no-repeat
+					&.waze-icon
+						&:before
+							background: url("../img/waze.svg") no-repeat
+					&.phone-icon
+						&:before
+							background: url("../img/phone.svg") no-repeat
+					&.fax-icon
+						&:before
+							background: url("../img/fax.svg") no-repeat
+					&.mail-icon
+						&:before
+							background: url("../img/mail.svg") no-repeat
+					&.clock-icon
+						&:before
+							background: url("../img/clock.svg") no-repeat
+					&.chat-icon
+						&:before
+							background: url("../img/chat.svg") no-repeat
+
+.section-map
+	padding: 10px 0
+	background-color: #fff
+	.map
+		width: 100%
+		height: 375px
+

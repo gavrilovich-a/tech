@@ -1,0 +1,237 @@
+@import "vars"
+
+.section-blog
+	.breadcrumbs
+		margin-bottom: 20px
+		text-align: right
+		.current
+			font-weight: bold
+	.blog-head
+		margin-bottom: 40px
+		.blog-head_item
+			float: right
+			display: inline-block
+			h1
+				margin: 0
+				line-height: 1
+		.blog-head_form
+			margin: auto
+			width: 50%
+			.search
+				position: relative
+				input
+					display: inline-block
+					width: 100%
+					border: none
+					border-bottom: 1px solid #d3d1d1
+					padding: 7px 0
+					outline: 0
+					background-color: #fff
+					text-indent: 5px
+					color: #8d8e90
+					margin-left: 20px
+					&:hover, &:focus
+						border-bottom: 1px solid $accent
+				button
+					position: absolute
+					top: 11px
+					left: -35px
+					border: none
+					background: transparent
+					outline: 0
+					cursor: pointer
+					padding: 0
+					span
+						display: block
+						background: url("../img/search.svg") no-repeat
+						width: 28px
+						height: 28px
+
+	.two-central-img
+		position: relative
+		color: #fff
+		padding-bottom: 10px
+		.central-img_item
+			margin-bottom: 10px
+			.central-img
+				min-height: 400px
+				position: relative
+				&:before
+					content: ''
+					height: 70%
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					background: linear-gradient(transparent, #000)
+					opacity: .8
+				.central-img_btn
+					width: 40px
+					height: 40px
+					display: inline-block
+					background-color: transparent
+					border: 1px solid $accent
+					line-height: 40px
+					position: absolute
+					bottom: 20px
+					left: 20px
+					a
+						display: block
+						text-align: center
+						line-height: 39px
+						text-decoration: none
+						&:before
+							content: '\f104'
+							font-family: FontAwesome
+							color: $accent
+					&:hover
+						background-color: $accent
+						a
+							&:before
+								color: #fff
+				.central-img_btn-soc
+					position: absolute
+					left: 20px
+					top: 20px
+					li
+						margin-bottom: 5px
+						a
+							display: block
+							height: 36px
+							width: 36px
+						&.btn-mail
+							a
+								background: url("../img/icon-mail.png") no-repeat
+						&.btn-google
+							a
+								background: url("../img/icongoogle.png") no-repeat
+						&.btn-viber
+							a
+								background: url("../img/iconviber.png") no-repeat
+						&.btn-fb
+							a
+								background: url("../img/icon-fb.png") no-repeat
+			.central-img_content
+				position: absolute
+				bottom: 0
+				right: 0
+				margin-right: 20px
+				.breadcrumbs
+					margin: 0
+					span
+						color: #fff
+						font-size: 16px
+					.current
+						font-weight: normal
+				p
+					font-size: 30px
+					font-weight: normal
+					line-height: 30px
+
+	.main-item
+		border-bottom: 1px solid #ebebeb
+		padding: 20px 0
+		&:first-child
+			padding-top: 0
+		.main-right_side
+			.right-side_img
+				min-height: 210px
+		.main-left_side
+			.left-side_content
+				font-family: OpenSansHebrew
+				h2
+					color: #000001
+					font-size: 30px
+					margin-bottom: 10px
+				.side_content_link
+					display: block
+					text-align: right
+					margin-bottom: 15px
+					li
+						display: inline-block
+						&:first-child
+							a
+								padding-right: 0
+							&:before
+								content: none
+						a
+							color: $accent
+							font-size: 16px
+							text-decoration: none
+							font-weight: bold
+							font-family: OpenSansHebrew
+							padding-right: 5px
+						&:before
+							content: '|'
+							color: $accent
+				.side-content_btn-soc
+					text-align: right
+					margin-bottom: 0
+					li
+						margin-bottom: 5px
+						display: inline-block
+						a
+							display: block
+							height: 36px
+							width: 36px
+						&.btn-mail
+							a
+								background: url("../img/icon-mail.png") no-repeat
+						&.btn-google
+							a
+								background: url("../img/icongoogle.png") no-repeat
+						&.btn-viber
+							a
+								background: url("../img/iconviber.png") no-repeat
+						&.btn-fb
+							a
+								background: url("../img/icon-fb.png") no-repeat
+				p
+					font-size: 16px
+					color: #5c6065
+					font-family: OpenSansHebrew
+					margin: 0
+
+	.bottom-pagination
+		padding-top: 50px
+		.pagination
+			display: block
+			text-align: right
+			margin: 0
+			padding-bottom: 45px
+			li
+				display: inline-block
+				width: 35px
+				height: 35px
+				line-height: 35px
+				margin: 0 6px
+				&:first-child
+					margin-right: 0
+				&.active
+					border: 1px solid $accent
+				a
+					display: block
+					text-align: center
+					color: #565658
+					font-size: 12px
+					text-decoration: none
+				&.pagination-btn
+					border: 1px solid #000001
+					width: 65px
+					a
+						position: relative
+						font-size: 14px
+					.btn-text
+						position: absolute
+						bottom: 1px
+						right: 7px
+						color: #000001
+					.lnr-arrow-left
+						margin-right: 25px
+						font-size: 14px
+						color: #000001
+					&:hover
+						span
+							&.lnr-arrow-left
+								&:before
+									color: $accent

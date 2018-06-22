@@ -1,0 +1,64 @@
+@import "vars"
+
+.section-download
+	.breadcrumbs
+		text-align: right
+		margin-top: 10px
+	.download-item-head
+		h1
+			font-size: 46px
+			color: #000001
+			font-family: OpenSansHebrew
+			line-height: 1
+			margin-bottom: 50px
+	.download-item-wrap
+		&:before
+			content: ''
+			height: 1px
+			width: 100%
+			background-color: #e3e4e5
+			position: absolute
+			top: -25px
+			left: 0
+		.download-item
+			padding-bottom: 32px
+			margin-bottom: 42px
+			border-bottom: 1px solid #e3e4e5
+			.download-item-img
+				min-height: 304px
+			.download-item-content
+				h3
+					font-size: 20px
+					color: #0e1412
+					margin: 10px 0
+				ul
+					text-align: right
+					li
+						display: inline-block
+						border: 1px solid $accent
+						margin-bottom: 5px
+						&:hover
+							background-color: $accent
+							a
+								color: #fff
+						a
+							padding: 4px 22px
+							display: inline-block
+							color: $accent
+							position: relative
+							transition: none
+							&:before
+								position: absolute
+								content: '\f104'
+								font-family: FontAwesome
+								left: 9px
+
+
+
+
+
+
+
+
+
+@import "media"
